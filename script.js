@@ -12,10 +12,10 @@ document.getElementById("startgame").onclick = function() {
         score = 0;
         document.getElementById("scorevalue").innerHTML = score;
         show("timeremain");
-        timeremain = 60;
+        timeremain = 1;
         document.getElementById("countdown").innerHTML = timeremain;
         hide("gameover");
-        document.getElementById("startgame").innerHTML = "Reset Game";
+        document.getElementById("startgame").innerHTML = '<span style="font-weight: bold; font-size: 19px; font-family:Gemunu Libre, sans-serif">RESET &ensp; GAME</font>';
         count();
         QNA();
     }
@@ -44,6 +44,9 @@ for (i = 1; i < 5; i++) {
     }
 }
 
+/*  */
+// 
+{ /*  */ }
 
 function count() {
     action = setInterval(function() {
@@ -52,13 +55,18 @@ function count() {
         if (timeremain == 0) {
             stopCount();
             show("gameover");
-            document.getElementById("gameover").innerHTML = "<p>Game Over</p><p>Your Score is " + score + ".</p>";
+            document.getElementById("gameover").innerHTML = '<span style="font-weight: mediem; font-size:5em ; font-family:Ultra, serif "> <p>Game&ensp;Over</p><p>Your Score is &ensp;' + score + '.</p></font>';
             hide("timeremain");
             hide("correct");
             hide("wrong");
+            hide("body")
+
             play = false;
             document.getElementById("startgame").innerHTML =
                 "Start Game"
+        }
+        if (timeremain == 30) {
+            alert('You have 30 second');
         }
     }, 1000);
 }
