@@ -12,7 +12,7 @@ document.getElementById("startgame").onclick = function() {
         score = 0;
         document.getElementById("scorevalue").innerHTML = score;
         show("timeremain");
-        timeremain = 1;
+        timeremain = 120;
         document.getElementById("countdown").innerHTML = timeremain;
         hide("gameover");
         document.getElementById("startgame").innerHTML = '<span style="font-weight: bold; font-size: 19px; font-family:Gemunu Libre, sans-serif">RESET &ensp; GAME</font>';
