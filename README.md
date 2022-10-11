@@ -1,3 +1,3 @@
 # Multiplication Game
 
-https://abhigyan24jain.github.io/MathsFunGame/
+https://abhigyan24jain.github.io/Multiplication-Game/
